@@ -105,8 +105,8 @@
     "webpack-blocks": "^1.0.0"
   },
   "scripts": {
-    "build": "babel src -d lib",
-    "build:watch": "babel src -w -d lib",
+    "build": "babel src -d lib --ignore './src/components/**/_story*'",
+    "build:watch": "babel src -w -d lib --ignore './src/components/**/_story*'",
     "lint": "eslint --ext js --ext jsx src test; exit 0",
     "lint:fix": "eslint --fix --ext js --ext jsx src test; exit 0",
     "pack": "npm run build && npm pack",
