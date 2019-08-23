@@ -59,10 +59,14 @@
     "uuid": "^3.2.1"
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^5.1.11",
+    "@storybook/addon-knobs": "^5.1.11",
+    "@storybook/react": "^5.1.11",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.3",
     "babel-loader": "^7.1.5",
+    "babel-plugin-add-module-exports": "^1.0.2",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-es2015-destructuring": "^6.23.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
@@ -110,7 +114,8 @@
     "test": "jest",
     "test:update-snapshots": "jest -u",
     "test:watch": "jest --watch",
-    "ci-publish": "ci-publish"
+    "ci-publish": "ci-publish",
+    "storybook": "start-storybook"
   },
   "files": [
     "lib/",
